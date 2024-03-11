@@ -1,0 +1,94 @@
+@import 'common.scss';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  &__container {
+    max-width: 1216px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    min-height: 104px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__button {
+    border-radius: 4px;
+    padding: 16px 20px;
+    background: $primary-black;
+    color: $primary-white;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;  
+    transition: all 0.5s ease;
+    &:hover {
+      background: $primary-white;
+      color: $primary-black;
+      border: 2px solid $primary-black;
+    }
+  }
+}
+.menu {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 3px;
+    column-gap: 30px;
+    justify-content: center;
+  }
+  &__link {
+    color: $primary-black;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+  }
+  &__link:hover {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1452px) {
+  .header__container{
+    max-width: 970px;
+  }
+}
+@media (max-width: 991.98px) {
+  .header__container {
+    max-width: 750px;
+  }
+  .header__button {
+    padding: 12px 17px;
+  }
+  .menu__list {
+    column-gap: 20px;
+  }
+  .menu__link {
+    font-size: 18px;
+  }
+  .menu__link:hover {
+    font-size: 20px;
+  }
+
+}
+@media (max-width: 767.98px) {
+  .header__container {
+    max-width: none;
+    padding: 0 10px;
+    justify-content: space-around;
+  }
+  .header__menu {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+}

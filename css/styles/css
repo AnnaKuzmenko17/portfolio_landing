@@ -1,0 +1,145 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+}
+.header__container {
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 0 15px;
+  min-height: 104px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__button {
+  border-radius: 4px;
+  padding: 16px 20px;
+  width: 153px;
+  height: 56px;
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  transition: all 0.5s ease;
+}
+.header__button:hover {
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 3px;
+  justify-content: flex-end;
+}
+.menu__link {
+  color: #000;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+}
+.menu__link:hover {
+  font-size: 22px;
+}
+
+@media (max-width: 1452px) {
+  .header__container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 991.98px) {
+  .header__container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767.98px) {
+  .header__container {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+* {
+  font-family: "Sora", sans-serif;
+  font-weight: 500;
+}
+
+.wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=css.map */

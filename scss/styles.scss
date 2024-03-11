@@ -1,0 +1,29 @@
+@import 'null.scss';
+@import 'header.scss';
+@import 'common.scss';
+@import 'hero.scss';
+
+* {
+  font-family: "Sora", sans-serif;
+  font-weight: 500;
+  color: var(--primary-black);
+}
+
+.wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+[class*="__container"] {
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+main {
+  min-height: 100%;
+  display: flex;
+  margin: 120px 0 0 0;
+  flex: 1 1 auto;
+}
