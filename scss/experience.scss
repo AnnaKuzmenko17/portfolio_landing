@@ -68,9 +68,25 @@
 }
 
 @media (max-width: 991.98px) {
+  .experience {
+    padding: 40px 0;
+  }
   .position__name {
     flex-direction: column;
     align-items: start;
     gap: 30px;
+  }
+
+  .position__icon {
+    padding-right: 15px;
+  }
+   
+  .position__tittle {
+    font-size: 20px;
+  }
+  .experience__tittle {
+    padding: 20px 0;
+    font-weight: 400;
+    font-size: 28px;
   }
 }
