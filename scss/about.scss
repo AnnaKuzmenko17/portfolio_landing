@@ -1,0 +1,47 @@
+.about {
+  padding: 60px 0;
+  &__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__content {
+    padding-left: 60px;
+  }
+  &__tittle {
+    padding: 20px 0;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 117%;
+    letter-spacing: -0.02em;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: $zinc-500;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .about {
+    padding: 40px 0;
+    &__container {
+      flex-direction: column;
+    }
+    &__tittle {
+      padding: 20px 0;
+      font-weight: 400;
+      font-size: 28px;
+    }
+    &__content {
+      padding: 0;
+    }
+  }
+}

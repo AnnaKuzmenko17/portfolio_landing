@@ -425,6 +425,50 @@ h6 {
     font-size: 28px;
   }
 }
+.about {
+  padding: 60px 0;
+}
+.about__container {
+  display: flex;
+  flex-direction: row;
+}
+.about__image {
+  width: 100%;
+}
+.about__content {
+  padding-left: 60px;
+}
+.about__tittle {
+  padding: 20px 0;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+}
+.about__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #71717a;
+}
+
+@media (max-width: 991.98px) {
+  .about {
+    padding: 40px 0;
+  }
+  .about__container {
+    flex-direction: column;
+  }
+  .about__tittle {
+    padding: 20px 0;
+    font-weight: 400;
+    font-size: 28px;
+  }
+  .about__content {
+    padding: 0;
+  }
+}
 * {
   font-family: "Sora", sans-serif;
   font-weight: 500;
