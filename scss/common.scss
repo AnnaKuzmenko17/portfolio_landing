@@ -8,3 +8,12 @@
 	$zinc-300: #d4d4d8;
 	$zinc-500: #71717a;
 	$zinc-800: #27272a;
+
+	.black {
+    font-weight: 800;
+  }
+  .bold {
+    font-weight: 800;
+    color: $primary-white;
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+  }

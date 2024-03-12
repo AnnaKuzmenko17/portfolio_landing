@@ -2,6 +2,8 @@
 @import 'header.scss';
 @import 'common.scss';
 @import 'hero.scss';
+@import 'skills.scss';
+@import 'experience.scss';
 
 * {
   font-family: "Sora", sans-serif;
@@ -21,9 +23,23 @@
   margin: 0 auto;
   padding: 0 15px;
 }
+
+@media (max-width: 1452px) {
+  [class*="__container"] {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  [class*="__container"] {
+    max-width: 750px;
+  }
+}
+
 main {
   min-height: 100%;
   display: flex;
+  flex-direction: column;
   margin: 120px 0 0 0;
   flex: 1 1 auto;
 }

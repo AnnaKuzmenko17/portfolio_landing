@@ -16,7 +16,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background-color: $primary-white;
   }
+
   &__button {
     border-radius: 4px;
     padding: 16px 20px;
