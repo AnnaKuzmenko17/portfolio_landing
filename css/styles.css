@@ -73,6 +73,7 @@ h6 {
   left: 0;
   z-index: 50;
   width: 100%;
+  background-color: #fff;
 }
 .header__container {
   max-width: 1216px;
@@ -83,7 +84,6 @@ h6 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
 }
 .header__button {
   border-radius: 4px;
@@ -122,6 +122,11 @@ h6 {
 .menu__link:hover {
   font-size: 22px;
 }
+.menu__button {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
 
 @media (max-width: 1452px) {
   .header__container {
@@ -146,10 +151,18 @@ h6 {
   }
 }
 @media (max-width: 767.98px) {
+  .header__button {
+    display: none;
+  }
+  .menu__button {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
   .header__container {
     max-width: none;
     padding: 0 10px;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .header__menu {
     display: none;
@@ -467,6 +480,91 @@ h6 {
   }
   .about__content {
     padding: 0;
+  }
+}
+.projects {
+  background-color: #000;
+  padding: 60px 0;
+}
+.projects__tittle {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  text-align: center;
+}
+.projects__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0;
+  gap: 50px;
+}
+.project:nth-child(2) {
+  flex-direction: row-reverse;
+}
+.project__image {
+  flex: 0 1 50%;
+  width: 50%;
+}
+.project__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+}
+.project__number {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.project__tittle {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.project__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #71717a;
+}
+
+@media (max-width: 991.98px) {
+  .projects {
+    padding: 40px 0;
+  }
+  .projects__tittle {
+    font-size: 28px;
+  }
+  .project,
+  .project:nth-child(2) {
+    padding: 0;
+    gap: 0px;
+    flex-direction: column;
+  }
+  .project__image {
+    width: 100%;
+    min-height: 40vh;
+    object-fit: cover;
+    align-self: center;
+  }
+  .project__number {
+    font-size: 24px;
+  }
+  .project__tittle {
+    font-size: 20px;
   }
 }
 * {
