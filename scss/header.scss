@@ -19,22 +19,7 @@
     justify-content: space-between;
   }
 
-  &__button {
-    border-radius: 4px;
-    padding: 16px 20px;
-    background: $primary-black;
-    color: $primary-white;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 120%;
-    letter-spacing: 0.02em;  
-    transition: all 0.5s ease;
-    &:hover {
-      background: $primary-white;
-      color: $primary-black;
-      border: 2px solid $primary-black;
-    }
-  }
+  
 }
 .menu {
   &__list {

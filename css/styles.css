@@ -68,6 +68,43 @@ h6 {
   text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
 }
 
+.btn {
+  border-radius: 4px;
+  padding: 16px 20px;
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  transition: all 0.5s ease;
+}
+.btn:hover {
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+
+.tittle {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 767.98px) {
+  .tittle {
+    font-size: 28px;
+  }
+}
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #71717a;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -85,22 +122,6 @@ h6 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-}
-.header__button {
-  border-radius: 4px;
-  padding: 16px 20px;
-  background: #000;
-  color: #fff;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 120%;
-  letter-spacing: 0.02em;
-  transition: all 0.5s ease;
-}
-.header__button:hover {
-  background: #fff;
-  color: #000;
-  border: 2px solid #000;
 }
 
 .menu__list {
@@ -181,6 +202,43 @@ h6 {
   text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
 }
 
+.btn {
+  border-radius: 4px;
+  padding: 16px 20px;
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  transition: all 0.5s ease;
+}
+.btn:hover {
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+
+.tittle {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 767.98px) {
+  .tittle {
+    font-size: 28px;
+  }
+}
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #71717a;
+}
+
 .black {
   font-weight: 800;
 }
@@ -189,6 +247,43 @@ h6 {
   font-weight: 800;
   color: #fff;
   text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+
+.btn {
+  border-radius: 4px;
+  padding: 16px 20px;
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  transition: all 0.5s ease;
+}
+.btn:hover {
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+
+.tittle {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 767.98px) {
+  .tittle {
+    font-size: 28px;
+  }
+}
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #71717a;
 }
 
 .hero {
@@ -646,6 +741,94 @@ h6 {
   .card {
     padding: 24px;
     min-height: 400px;
+  }
+}
+.contacts {
+  padding: 60px 0;
+}
+.contacts__container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  align-self: center;
+  width: 100%;
+}
+.contacts__form input {
+  border: 1.4px solid #000;
+  border-radius: 4px;
+  padding: 16px 24px;
+  width: 100%;
+  height: 56px;
+}
+.contacts__form textarea {
+  border: 1.4px solid #000;
+  border-radius: 4px;
+  padding: 16px 24px;
+  width: 100%;
+  height: 140px;
+}
+.contacts__buttons {
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.contacts__text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  gap: 20px;
+}
+.contacts__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.social__link:nth-child(1) {
+  background-color: #000;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+@media (max-width: 1452px) {
+  .contacts__container {
+    flex-direction: column;
+  }
+  .contacts__buttons {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+@media (max-width: 991.98px) {
+  .contacts {
+    padding: 40px 0;
+  }
+  .contacts__contacts {
+    font-weight: 700;
+    font-size: 20px;
   }
 }
 .footer {

@@ -17,3 +17,41 @@
     color: $primary-white;
     text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
   }
+
+	.btn {
+    border-radius: 4px;
+    padding: 16px 20px;
+    background: $primary-black;
+    color: $primary-white;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;  
+    transition: all 0.5s ease;
+    &:hover {
+      background: $primary-white;
+      color: $primary-black;
+      border: 2px solid $primary-black;
+    }
+  }
+
+  .tittle {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 114%;
+    letter-spacing: -0.02em;
+  }
+
+  @media (max-width: 767.98px) {
+    .tittle {
+      font-size: 28px;
+    }
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: $zinc-500;
+  }
