@@ -3,10 +3,7 @@
   padding: 60px 0;
   
   &__tittle {
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 114%;
-    letter-spacing: -0.02em;
+    padding: 20px 0;
     color: $primary-white;
     text-align: center;
   }
@@ -57,34 +54,28 @@
   }
 
   &__description {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
     color: $zinc-500;
   }
 }
 
 @media (max-width: 991.98px) {
+
   .projects {
     padding: 40px 0;
-    
-    &__tittle {
-      font-size: 28px;
-    }
   }
+
   .project,
   .project:nth-child(2) {
     padding: 0;
     gap: 0px;
     flex-direction: column;
   }
+
   .project {
     &__image {
       width: 100%;
       min-height: 40vh;
       object-fit: cover;
-      align-self: center;
     }
   
     &__number {

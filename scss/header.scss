@@ -1,26 +1,20 @@
-@import 'common.scss';
-
 .header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 50;
-  width: 100%;
+  z-index: 100;
   background-color: $primary-white;
+  width: 100%;
+  
   &__container {
-    max-width: 1216px;
-    margin: 0 auto;
-    padding: 0 15px;
-
     min-height: 104px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
-
-  
 }
+
 .menu {
   &__list {
     display: flex;
@@ -30,18 +24,21 @@
     column-gap: 30px;
     justify-content: center;
   }
+
   &__link {
     color: $primary-black;
     font-weight: 600;
     font-size: 20px;
     line-height: 120%;
     letter-spacing: -0.02em;
-    text-transform: capitalize;
     transition: all 0.5s ease;
   }
+
   &__link:hover {
     font-size: 22px;
+    color: $error;
   }
+
   &__button {
     display: none;
     visibility: hidden;
@@ -49,15 +46,7 @@
   }
 }
 
-@media (max-width: 1452px) {
-  .header__container{
-    max-width: 970px;
-  }
-}
 @media (max-width: 991.98px) {
-  .header__container {
-    max-width: 750px;
-  }
   .header__button {
     padding: 12px 17px;
   }
@@ -70,25 +59,74 @@
   .menu__link:hover {
     font-size: 20px;
   }
-
 }
+
 @media (max-width: 767.98px) {
-  .header__button {
-    display: none;
+  .header {
+    &__container {
+      min-height: 84px;
+      max-width: none;
+      padding: 0 10px;
+      justify-content: space-between;
+    }
+
+    &__button {
+      display: none;
+    }
+    
+    &__menu {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+
+      &.open {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        min-height: 100vh;
+        z-index: 80;
+        background-color: $primary-white;
+        }
+    }
+
+    &__logo {
+      z-index: 120;
+    }
   }
+
   .menu__button {
     display: block;
     visibility: visible;
     opacity: 1;
+    z-index: 120;
+
+    & img{
+      width: 30px;
+      height: 30px;
+    }
+
+    &.hidden {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
   }
-  .header__container {
-    max-width: none;
-    padding: 0 10px;
-    justify-content: space-between;
+
+  .header__menu.open .menu__list {
+      min-height: 100vh;
+      padding: 60px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      & .menu__link {
+        font-size: 48px;
+      }
+    } 
   }
-  .header__menu {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-  }
-}
+

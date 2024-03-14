@@ -21,10 +21,11 @@
           </ul>
         </div>
         <button class="header__button btn">Resume</button>
-        <button class="menu__button">
-          <svg width="28" height="18" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.5 18V15H27.5V18H0.5ZM0.5 10.5V7.5H27.5V10.5H0.5ZM0.5 3V0H27.5V3H0.5Z" fill="black" />
-          </svg>
+        <button class="menu__button btn-open">
+          <img src="img/menu-icon.png" alt="open-menu-button">
+        </button>
+        <button class="menu__button btn-close hidden">
+          <img src="img/close-icon.png" alt="close-menu-button">
         </button>
       </div>
     </header>
@@ -32,13 +33,13 @@
       <section class="hero">
         <div class="hero__container">
           <div class="hero__content">
-            <h1 class="hero__tittle">Hello I'am <span class="black">Anna Kuzmenko. <br>Frontend</span> <span class="bold">Developer</span> Based in <span class="black">Ukraine</span></h1>
-            <p class="hero__description">Lorem ipsum  facilis. Saepe expedita, eaque fugit molestias optio praesentium mollitia libero porro dicta a odit ut exercitationem est dignissimos recusandae odio magnam sapiente pariatur labore tenetur laudantium cupiditate aspernatur! Provident.</p>
+            <h1 class="hero__tittle tittle">Hello I'am <span class="bold">Anna Kuzmenko. <br>Frontend</span> <span class="shadow">Developer</span> <br>Based in <span class="bold">Ukraine</span></h1>
+            <p class="hero__description description">Lorem ipsum  facilis. Saepe expedita, eaque fugit molestias optio praesentium mollitia libero porro dicta a odit ut exercitationem est dignissimos recusandae odio magnam sapiente pariatur labore tenetur laudantium cupiditate aspernatur! Provident.</p>
             <div class="hero__social social">
-              <button class="social__link"><img src="img/facebook.png" alt=""></button>
-              <button class="social__link"><img src="img/twitter.png" alt=""></button>
-              <button class="social__link"><img src="img/discord.png" alt=""></button>
-              <button class="social__link"><img src="img/github.png" alt=""></button>
+              <button class="social__link"><img src="img/facebook.png" alt="facebook-logo"></button>
+              <button class="social__link"><img src="img/twitter.png" alt="twitter-logo"></button>
+              <button class="social__link"><img src="img/discord.png" alt="discord-logo"></button>
+              <button class="social__link"><img src="img/github.png" alt="github-logo"></button>
             </div>
           </div>
           <div class="hero__image">
@@ -48,46 +49,46 @@
       </section>
       <section class="skills" id="skills">
         <div class="skills__container">
-          <h2 class="skills__tittle">My <span class="black">Skills</span></h2>
+          <h2 class="skills__tittle tittle">My <span class="bold">Skills</span></h2>
           <div class="skills__grid grid">
             <div class="grid__item skill">
-              <img src="img/icon-git.png" alt="" class="skill__icon">
+              <img src="img/icon-git.png" alt="git-logo" class="skill__icon">
               <h3 class="skill__name">Git</h3>
             </div>
             <div class="grid__item skill">
-              <img src="img/icon-javscript.png" alt="" class="skill__icon">
+              <img src="img/icon-javscript.png" alt="js-logo" class="skill__icon">
               <h3 class="skill__name">JavaScript</h3>
             </div>
           <div class="grid__item skill">
-            <img src="img/icon-socket.png" alt="" class="skill__icon">
+            <img src="img/icon-socket.png" alt="socket-logo" class="skill__icon">
             <h3 class="skill__name">Socket</h3>
           </div>
           <div class="grid__item skill">
-            <img src="img/icon-sass.png" alt="" class="skill__icon">
+            <img src="img/icon-sass.png" alt="sass-logo" class="skill__icon">
             <h3 class="skill__name">SASS</h3>
           </div>
           <div class="grid__item skill">
-            <img src="img/icon-nest.png" alt="" class="skill__icon">
+            <img src="img/icon-nest.png" alt="nest-logo" class="skill__icon">
             <h3 class="skill__name">NestJS</h3>
           </div>
           <div class="grid__item skill">
-            <img src="img/icon-git.png" alt="" class="skill__icon">
+            <img src="img/icon-git.png" alt="git-logo" class="skill__icon">
             <h3 class="skill__name">Git</h3>
           </div>
           <div class="grid__item skill">
-            <img src="img/icon-nest.png" alt="" class="skill__icon">
+            <img src="img/icon-nest.png" alt="nest-logo" class="skill__icon">
             <h3 class="skill__name">NestJS</h3>
           </div>
           <div class="grid__item skill">
-            <img src="img/icon-nest.png" alt="" class="skill__icon">
+            <img src="img/icon-nest.png" alt="nest-logo" class="skill__icon">
             <h3 class="skill__name">NestJS</h3>
           </div>
           <div class="grid__item skill">
-            <img src="img/icon-sass.png" alt="" class="skill__icon">
+            <img src="img/icon-sass.png" alt="sass-logo" class="skill__icon">
             <h3 class="skill__name">SASS</h3>
           </div>
           <div class="grid__item skill">
-            <img src="img/icon-socket.png" alt="" class="skill__icon">
+            <img src="img/icon-socket.png" alt="socket-logo" class="skill__icon">
             <h3 class="skill__name">Socket</h3>
           </div>
         </div>
@@ -95,79 +96,79 @@
       </section>
       <section class="experience">
         <div class="experience__container">
-          <h2 class="experience__tittle">My <span class="black">Experience</span></h2>
+          <h2 class="experience__tittle tittle">My <span class="bold">Experience</span></h2>
           <div class="experience__content positions">
             <div class="position">
               <div class="position__name">
                 <div class="position__label">
-                  <img src="img/google.png" alt="" class="position__icon">
+                  <img src="img/google.png" alt="google-logo" class="position__icon">
                   <h3 class="position__tittle">Lead Software Engineer At Google</h3>
                 </div>
                 <h4 class="position__date">Nov 2019 - Present</h4>
               </div>
-              <p class="position__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores accusantium omnis, at assumenda expedita, laboriosam culpa quod officiis cum, accusamus autem. Consectetur modi dolores maxime eaque, adipisci minima accusantium amet!</p>
+              <p class="position__description description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores accusantium omnis, at assumenda expedita, laboriosam culpa quod officiis cum, accusamus autem. Consectetur modi dolores maxime eaque, adipisci minima accusantium amet!</p>
             </div>
             <div class="position">
               <div class="position__name">
                 <div class="position__label">
-                  <img src="img/youtube.png" alt="" class="position__icon">
+                  <img src="img/youtube.png" alt="youtube-logo" class="position__icon">
                   <h3 class="position__tittle">Software Engineer At Youtube</h3>
                 </div>
                 <h4 class="position__date">Jan 2017 - Oct 2019</h4>
               </div>
-              <p class="position__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, nobis? Possimus, aspernatur pariatur expedita voluptas cupiditate, cumque enim perspiciatis ratione iusto repudiandae hic itaque. Nesciunt nam recusandae provident consequuntur magnam id praesentium illum sequi inventore!</p>
+              <p class="position__description description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, nobis? Possimus, aspernatur pariatur expedita voluptas cupiditate, cumque enim perspiciatis ratione iusto repudiandae hic itaque. Nesciunt nam recusandae provident consequuntur magnam id praesentium illum sequi inventore!</p>
             </div>
             <div class="position">
               <div class="position__name">
                 <div class="position__label">
-                  <img src="img/apple.png" alt="" class="position__icon">
+                  <img src="img/apple.png" alt="apple-logo" class="position__icon">
                   <h3 class="position__tittle">Junior Software Engineer At Apple</h3>
                 </div>
                 <h4 class="position__date">Jan 2016 - Dec 2017</h4>
               </div>
-              <p class="position__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit a enim ea asperiores corrupti error rerum odio accusamus molestiae suscipit, ut dolor voluptate fuga voluptatibus!</p>
+              <p class="position__description description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit a enim ea asperiores corrupti error rerum odio accusamus molestiae suscipit, ut dolor voluptate fuga voluptatibus!</p>
             </div>
           </div>
         </div>
       </section>
       <section class="about" id="about">
         <div class="about__container">
-          <img src="img/avatar.png" alt="" class="about__image">
+          <img src="img/avatar.png" alt="avatar" class="about__image">
           <div class="about__content">
-            <h2 class="about__tittle">About <span class="black">Me</span></h2>
-            <p class="about__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat voluptatem consequatur, adipisci sunt quidem illo! Totam eius adipisci saepe corrupti commodi a earum, et molestias repellendus itaque reprehenderit magni reiciendis ipsam sunt deserunt blanditiis aliquid quam ratione corporis quae assumenda. <br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque excepturi delectus rem, itaque aspernatur dolore fugiat commodi quis nostrum deserunt laboriosam sequi voluptas! Odit maxime quasi itaque aperiam, dolorum id reiciendis praesentium est excepturi, eius, suscipit eligendi veniam. Qui officiis laudantium minima iusto non eligendi optio, aliquam provident mollitia ratione, iure aspernatur? Mollitia quisquam veritatis nisi error cumque sint illo omnis ut, laudantium ab quidem numquam eius amet architecto dolores?</p>
+            <h2 class="about__tittle tittle">About <span class="bold">Me</span></h2>
+            <p class="about__description description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat voluptatem consequatur, adipisci sunt quidem illo! Totam eius adipisci saepe corrupti commodi a earum, et molestias repellendus itaque reprehenderit magni reiciendis ipsam sunt deserunt blanditiis aliquid quam ratione corporis quae assumenda. <br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque excepturi delectus rem, itaque aspernatur dolore fugiat commodi quis nostrum deserunt laboriosam sequi voluptas! Odit maxime quasi itaque aperiam, dolorum id reiciendis praesentium est excepturi, eius, suscipit eligendi veniam. Qui officiis laudantium minima iusto non eligendi optio, aliquam provident mollitia ratione, iure aspernatur? Mollitia quisquam veritatis nisi error cumque sint illo omnis ut, laudantium ab quidem numquam eius amet architecto dolores?</p>
           </div>
         </div>
       </section>
       <section class="projects" id="projects">
         <div class="projects__container">
-          <h2 class="projects__tittle">My <span class="black">Projects</span></h2>
+          <h2 class="projects__tittle tittle">My <span class="bold">Projects</span></h2>
           <div class="projects__content">
             <div class="project">
-              <img src="img/project-1.png" alt="" class="project__image">
+              <img src="img/project-1.png" alt="project" class="project__image">
               <div class="project__text">
                 <h3 class="project__number">01</h3>
                 <h4 class="project__tittle">Crypto Screener Application</h4>
-                <p class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit soluta enim placeat? Fugiat iste minima corporis dolorum reprehenderit sint nihil aperiam veniam commodi consequatur! In quis mollitia quaerat illo. Cupiditate error fugiat, inventore molestias facilis ducimus iusto, quibusdam explicabo aut, fuga laudantium quos fugit magni nihil tempore quo reprehenderit nesciunt!</p>
-                <a href="#" class="project__link"><img src="img/read-more.png" alt=""></a>
+                <p class="project__description description">Lorem ipsum dolor sit amet corporis dolorum reprehenderit sint nihil aperiam veniam commodi consequatur! In quis mollitia quaerat illo. Cupiditate error fugiat, inventore molestias facilis ducimus iusto, quibusdam explicabo aut, fuga laudantium quos fugit magni nihil tempore quo reprehenderit nesciunt!</p>
+                <a href="#" class="project__link"><img src="img/read-more.png" alt="read-more"></a>
               </div>
             </div>
             <div class="project">
-              <img src="img/project-2.png" alt="" class="project__image">
+              <img src="img/project-2.png" alt="project" class="project__image">
               <div class="project__text">
                 <h3 class="project__number">02</h3>
                 <h4 class="project__tittle">Euphoria - Ecommerce(Apparels) Website Template</h4>
-                <p class="project__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, pariatur molestiae tempora soluta veritatis optio reiciendis voluptates fuga porro atque deserunt id facere. Quibusdam, commodi illum eius, suscipit ex voluptatem maxime dolorem, id quasi adipisci rerum! Quisquam repudiandae aspernatur dolorum! Suscipit hic minus vel ullam.</p>
-                <a href="#" class="project__link"><img src="img/read-more.png" alt=""></a>
+                <p class="project__description description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, pariatur molestiae tempora soluta veritatis optio reiciendis voluptates fuga porro atque deserunt id facere. Quibusdam, commodi illum eius, suscipit ex voluptatem maxime dolorem, id quasi adipisci rerum! Quisquam repudiandae aspernatur dolorum! Suscipit hic minus vel ullam.</p>
+                <a href="#" class="project__link"><img src="img/read-more.png" alt="read-more"></a>
               </div>
             </div>
             <div class="project">
-              <img src="img/project-3.png" alt="" class="project__image">
+              <img src="img/project-3.png" alt="project" class="project__image">
               <div class="project__text">
                 <h3 class="project__number">03</h3>
                 <h4 class="project__tittle">Blog Website Template</h4>
-                <p class="project__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, sapiente! Laudantium provident consequatur omnis eveniet illum nostrum cupiditate vitae quam et fugit, reprehenderit earum unde quos! Possimus, sit. Ducimus, deleniti?</p>
-                <a href="" class="project__link"><img src="img/read-more.png" alt=""></a>
+                <p class="project__description description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, sapiente! Laudantium provident consequatur omnis eveniet illum nostrum cupiditate vitae quam et fugit, reprehenderit earum unde quos! Possimus, sit. Ducimus, deleniti?</p>
+                <a href="" class="project__link"><img src="img/read-more.png" alt="read-more"></a>
               </div>
             </div>
           </div>
@@ -175,33 +176,33 @@
       </section>
       <section class="testimonial">
         <div class="testimonial__container">
-          <h2 class="testimonial__tittle">My <span class="black">Testimonial</span></h2>
+          <h2 class="testimonial__tittle tittle">My <span class="bold">Testimonial</span></h2>
           <div class="testimonial__content">
             <div class="testimonial__card card">
-              <img src="img/testimonial-photo.png" alt="" class="card__image">
-              <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quisquam molestiae esse fugit soluta iusto error nisi eos fuga beatae?</p>
-              <img src="img/line.png" alt="">
+              <img src="img/testimonial-photo.png" alt="man" class="card__image">
+              <p class="card__description description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quisquam molestiae esse fugit soluta iusto error nisi eos fuga beatae?</p>
+              <img src="img/line.png" alt="line">
               <h3 class="card__name">Evren Shah</h3>
               <h4 class="card__proffesion">Designer</h4>
             </div>
             <div class="testimonial__card card">
-              <img src="img/testimonial-photo.png" alt="" class="card__image">
-              <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quisquam molestiae esse fugit soluta iusto error nisi eos fuga beatae?</p>
-              <img src="img/line-white.png" alt="">
+              <img src="img/testimonial-photo.png" alt="man" class="card__image">
+              <p class="card__description description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quisquam molestiae esse fugit soluta iusto error nisi eos fuga beatae?</p>
+              <img src="img/line-white.png" alt="line">
               <h3 class="card__name">Evren Shah</h3>
               <h4 class="card__proffesion">Designer</h4>
             </div>
             <div class="testimonial__card card">
-              <img src="img/testimonial-photo.png" alt="" class="card__image">
-              <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quisquam molestiae esse fugit soluta iusto error nisi eos fuga beatae?</p>
-              <img src="img/line.png" alt="">
+              <img src="img/testimonial-photo.png" alt="man" class="card__image">
+              <p class="card__description description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quisquam molestiae esse fugit soluta iusto error nisi eos fuga beatae?</p>
+              <img src="img/line.png" alt="line">
               <h3 class="card__name">Evren Shah</h3>
               <h4 class="card__proffesion">Designer</h4>
             </div>
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="contacts__container">
           <div class="contacts__form">
             <form action="" class="form">
@@ -213,16 +214,16 @@
             <div class="contacts__buttons">
               <button type="submit" class="btn">Get In Touch</button>
               <div class="social">
-                <button class="social__link"><img src="img/facebook.png" alt=""></button>
-                <button class="social__link"><img src="img/twitter.png" alt=""></button>
-                <button class="social__link"><img src="img/discord.png" alt=""></button>
-                <button class="social__link"><img src="img/github.png" alt=""></button>
+                <button class="social__link"><img src="img/facebook.png" alt="facebook-logo"></button>
+                <button class="social__link"><img src="img/twitter.png" alt="twitter-logo"></button>
+                <button class="social__link"><img src="img/discord.png" alt="discord-logo"></button>
+                <button class="social__link"><img src="img/github.png" alt="github-logo"></button>
               </div>
             </div>
           </div>
           <div class="contacts__text">
-            <h2 class="contacts__tittle tittle"><span class="black">Let's</span> <span class="bold">talk</span> <span class="black">for <br>Something special</span></h2>
-            <p class="contacts__description description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt distinctio beatae dolorum illo at nobis saepe facilis harum, voluptas possimus?</p>
+            <h2 class="contacts__tittle tittle"><span class="bold">Let's</span> <span class="shadow">talk</span> <span class="bold">for <br>Something special</span></h2>
+            <p class="contacts__description description description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt distinctio beatae dolorum illo at nobis saepe facilis harum, voluptas possimus?</p>
             <div class="contacts__contacts">
               <a href="mailto:anna.kuzmenko120063@gmail.com">anna.kuzmenko120063@gmail.com</a>
               <a href="tel:+380507457817">0507457817</a>
@@ -233,7 +234,7 @@
     </main>
     <footer class="footer">
       <div class="footer__container">
-        <img src="img/logo-white.png" alt="" class="footer__logo">
+        <img src="img/logo-white.png" alt="footer-logo" class="footer__logo">
         <div class="footer__copyright">
           <h5>@ 2020 - 2024 Personal <br>Made In Figma</h5>
         </div>

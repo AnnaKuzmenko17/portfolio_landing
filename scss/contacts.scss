@@ -1,16 +1,20 @@
 .contacts {
   padding: 60px 0;
+
   &__container {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 50px;
+    padding: 0 15px;
   }
+
   &__form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
     align-self: center;
-    width: 100%;
+
     input {
       border: 1.40px solid $primary-black;
       border-radius: 4px;
@@ -18,6 +22,7 @@
       width: 100%;
       height: 56px;
     }
+
      textarea {
       border: 1.40px solid $primary-black;
       border-radius: 4px;
@@ -26,6 +31,7 @@
       height: 140px;
      }
   }
+
   &__buttons {
     padding: 20px 0;
     width: 100%;
@@ -34,6 +40,7 @@
     align-items: center;
     justify-content: space-between;
   }
+
   &__text {
     display: flex;
     flex-direction: column;
@@ -41,49 +48,57 @@
     justify-content: center;
     gap: 20px;
   }
-  &__tittle {
-  }
-  &__description {
-  }
+
   &__contacts {
     display: flex;
     flex-direction: column;
     gap: 10px;
     font-weight: 600;
     font-size: 28px;
-   line-height: 114%;
-   letter-spacing: -0.02em;
+    line-height: 114%;
+    letter-spacing: -0.02em;
+    a:hover {
+      color: $error;
+    }
   }
 }
+
 .form {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+
 .social__link {
   &:nth-child(1) {
     background-color: $primary-black;
   }
 }
+
 .social {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
+
 @media (max-width: 1452px) {
 
   .contacts__container {
     flex-direction: column;
   }
+
   .contacts__buttons {
     flex-direction: column;
     align-items: start;
   }
 }
+
 @media (max-width: 991.98px) {
+
   .contacts {
     padding: 40px 0;
   }
+
   .contacts__contacts {
     font-weight: 700;
     font-size: 20px;
